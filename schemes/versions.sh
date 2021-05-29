@@ -1,4 +1,14 @@
 
+impls_of_scheme=(
+    chez
+    chibi
+    chicken
+    guile
+    loko
+    mit
+    racket
+)
+
 # https://github.com/weinholt/scheme-docker/blob/chezscheme/chezscheme/9.5.2-threads/Dockerfile
 # looks better but no hub binaries? https://github.com/scheme-containers/chezscheme/blob/master/9.5-threads/Dockerfile
 image_chez=weinholt/chezscheme
