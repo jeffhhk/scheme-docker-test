@@ -4,4 +4,6 @@ source "$adirBase/schemes/versions.sh"
 
 expr="$*"
 exprprint="(write $expr) (newline)"
-echo "$exprprint" | docker run -i -v$(pwd):$(pwd) -w$(pwd) $image_loko:$version_loko --script /dev/stdin
+echo "$exprprint" | docker run -i -v$(pwd):$(pwd) -w$(pwd) \
+    $image_loko:$version_loko \
+    --script /dev/stdin

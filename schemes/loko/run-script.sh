@@ -4,4 +4,6 @@ source "$adirBase/schemes/versions.sh"
 
 # https://scheme.fail/
 # https://scheme.fail/manual/loko.html
-docker run -it -v$(pwd):$(pwd) -w$(pwd) $image_loko:$version_loko --program "$@"
+docker run -it -v$(pwd):$(pwd) -w$(pwd) \
+    $image_loko:$version_loko \
+    --program "$@"

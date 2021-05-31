@@ -4,6 +4,8 @@ source "$adirBase/schemes/versions.sh"
 
 expr="$*"
 exprprint="(write $expr)"
-docker run -v$(pwd):$(pwd) -w$(pwd) $image_mit:$version_mit /usr/local/bin/scheme --quiet --eval "$exprprint"
+docker run -v$(pwd):$(pwd) -w$(pwd) \
+    $image_mit:$version_mit \
+    /usr/local/bin/scheme --quiet --eval "$exprprint"
 # work around no output: (newline) (display (integer->char 10))
 echo
