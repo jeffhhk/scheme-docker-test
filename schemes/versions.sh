@@ -37,4 +37,4 @@ version_mit=11
 
 # https://github.com/samth/docker-racket-build
 image_racket=racket/racket
-version_racket=8.1
+version_racket=8.1-full
